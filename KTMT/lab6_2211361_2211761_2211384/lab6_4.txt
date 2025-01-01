@@ -1,0 +1,16 @@
+Bài 4:
+(a) Dựa vào bảng 1, ta có thể vẽ sơ đồ mạng cho các kiểu lệnh như sau:
+Load: IM -> Reg -> ALU -> DM -> Reg
+Store: IM -> Reg -> ALU -> DM
+ALU: IM -> Reg -> ALU -> Reg
+Branch: IM -> Reg -> ALU
+Jump: IM -> Add
+Trong đó, IM là Instruction memory, Reg là Registers, ALU là Arithmetic Logic Unit, DM là Data memory, Add là Adder.
+Từ sơ đồ mạng, ta có thể tính được độ trễ của mỗi kiểu lệnh như sau:
+Load: 200 + 150 + 100 + 200 + 150 = 800ns
+Store: 200 + 150 + 100 + 200 = 650ns
+ALU: 200 + 150 + 100 + 150 = 600ns
+Branch: 200 + 150 + 100 = 450ns
+Jump: 200 + 10 = 210ns
+Vậy, critical path là kiểu lệnh Load với độ trễ là 800ns.
+(b) Để xác định thời gian cycle của hệ thống, ta cần xem xét thời gian hoàn thành của critical path. Thời gian cycle phải đủ lớn để đảm bảo lệnh bất kỳ sẽ thực thi xong trong một chu kỳ đơn. Vì vậy, thời gian cycle phải bằng hoặc lớn hơn thời gian hoàn thành của critical path

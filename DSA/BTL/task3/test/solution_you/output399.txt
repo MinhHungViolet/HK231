@@ -1,0 +1,56 @@
+LIGHT 5 line 9
+pp--3
+zc-9
+nz--9
+LIGHT 3 line 18
+fv--10
+ol-1
+gy--2
+zc-9
+pp--3
+ij-1
+LIGHT -3 line 43
+kr--6
+rs-2
+ge--10
+gc--4
+bf-4
+dx-4
+do-2
+th--3
+yv-5
+LIGHT 9 line 51
+jw--5
+vn-6
+gx-2
+gc--4
+yv-5
+th--3
+rs-2
+kr--6
+bf-4
+dx-4
+do-2
+ge--10
+dv--1
+fm--9
+LIGHT 3 line 63
+vl-6
+fg--4
+av--6
+cj--9
+LIGHT 2 line 101
+ob-7
+le-2
+wf--7
+wn--2
+kc-1
+xl--7
+dl-6
+dp-2
+ld--5
+wl-2
+en-7
+yx-8
+tx--3
+ct--9

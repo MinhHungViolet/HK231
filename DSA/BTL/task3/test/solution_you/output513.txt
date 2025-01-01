@@ -1,0 +1,40 @@
+LIGHT 0 line 2
+LIGHT 0 line 28
+ul--5
+LIGHT 7 line 30
+ls-2
+jk-9
+jz-5
+xu-8
+tr-4
+tn-3
+LIGHT 0 line 31
+ul--5
+LIGHT -4 line 32
+ls-2
+tn-3
+tr-4
+xu-8
+jz-5
+jk-9
+LIGHT 6 line 40
+ho--6
+jk-9
+jz-5
+tn-3
+ul--5
+qu-3
+LIGHT -10 line 41
+ho--6
+qu-3
+ul--5
+tn-3
+jz-5
+jk-9
+LIGHT 8 line 54
+cs--5
+fl-6
+ry--10
+yn-5
+wx-5
+bb--7

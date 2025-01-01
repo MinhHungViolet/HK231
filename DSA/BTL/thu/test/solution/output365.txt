@@ -1,0 +1,81 @@
+LIGHT -6 line 6
+fj-8
+xp--5
+LIGHT 6 line 33
+bo-2
+xp--5
+im-3
+ea--7
+ai--5
+de-6
+tm-1
+pk--4
+ae-7
+fj-8
+vn--3
+gg--9
+LIGHT 1 line 43
+bo-2
+im-3
+ea--7
+de-6
+tm-1
+ai--5
+pk--4
+ae-7
+vn--3
+fj-8
+gg--9
+xp--5
+LIGHT 3 line 50
+bo-2
+im-3
+ai--5
+pk--4
+de-6
+vn--3
+tm-1
+gg--9
+xp--5
+ae-7
+fj-8
+ea--7
+LIGHT -10 line 65
+bo-2
+vn--3
+pk--4
+fj-8
+ai--5
+ae-7
+ea--7
+xp--5
+tm-1
+de-6
+gg--9
+im-3
+LIGHT -5 line 99
+vb--7
+de-6
+yo-4
+im-3
+pk--4
+bo-2
+ai--5
+ae-7
+ea--7
+gg--9
+tm-1
+vn--3
+LIGHT 2 line 101
+vb--7
+vn--3
+tm-1
+gg--9
+ea--7
+ae-7
+ai--5
+bo-2
+pk--4
+im-3
+yo-4
+de-6

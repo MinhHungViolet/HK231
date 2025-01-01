@@ -1,0 +1,160 @@
+///////////////////bai1
+Node* minValueNode(Node* node){
+    Node* curr = node;
+    while (curr && curr->pLeft != NULL){
+        curr = curr->pLeft;
+    }
+    return curr;
+}
+Node* addNode(Node* root, T value){
+    if(root == NULL) {
+        Node* newNode = new Node(value);
+        return newNode;
+    }
+
+    if(root->value > value){
+        root->pLeft = addNode(root->pLeft, value);
+    }
+
+    if(root->value <= value){
+        root->pRight = addNode(root->pRight, value);
+    }
+    return root;       
+}
+
+Node* delNode(Node* root, T value){
+    if(root == NULL){
+        return root;
+    }
+
+    if(root->value < value){
+        root->pRight = delNode(root->pRight, value);
+    }
+    else if(root->value > value){
+        root->pLeft = delNode(root->pLeft, value);
+    }
+    else if(root->value == value && root->pLeft == NULL){
+        Node* temp = root->pRight;
+        free(root);
+        return temp;
+    }
+    else if(root->value == value && root->pRight == NULL){
+        Node* temp = root->pLeft;
+        free(root);
+        return temp;
+    }
+    else if(root->value == value && root->pRight != NULL && root->pLeft != NULL){
+        Node* temp = minValueNode(root->pRight);
+        root->value = temp->value;
+        root->pRight = delNode(root->pRight, temp->value);
+    }
+    return root;
+}
+void add(T value){
+    root = addNode(root, value);
+}
+
+void deleteNode(T value) {
+    //TODO
+    root = delNode(root, value);
+}
+
+///////////////////////////bai2
+int kthSmallest(BSTNode* root, int k) {
+    stack<BSTNode*> s;
+    BSTNode* curr = root;
+    int count = 0;
+    while (curr != nullptr || !s.empty()) {
+        while (curr != nullptr) {
+            s.push(curr);
+            curr = curr->left;
+        }
+        curr = s.top();
+        s.pop();
+        count++;
+        if (count == k) {
+            return curr->val;
+        }
+        curr = curr->right;
+    }
+    return -1; // k is out of range
+}
+
+//////////////////////bai3
+int singleChild(BSTNode* root) {
+    if (root == nullptr) {
+        return 0;
+    }
+    int count = 0;
+    if ((root->left == nullptr && root->right != nullptr) || (root->left != nullptr && root->right == nullptr)) {
+        count++;
+    }
+    count += singleChild(root->left) + singleChild(root->right);
+    return count;
+}
+
+///////////////////bai4
+// STUDENT ANSWER BEGIN
+// You can define other functions here to help you.
+
+bool findRecur(Node* root, T data){
+    if(root == NULL) return false;
+
+    if(root->value == data) return true;
+    else if(root->value > data){
+        return findRecur(root->pLeft, data);
+    }
+    else if(root->value < data){
+        return findRecur(root->pRight, data);
+    }
+    return false;
+}
+
+T sumRecur(Node* root, T left, T right){
+    if(root == NULL) return 0;
+
+    if(root->value < left){
+        return sumRecur(root->pRight, left, right);
+    }  
+    else if(root->value > right){
+        return sumRecur(root->pLeft, left, right);
+    }   
+    else{
+        return root->value + sumRecur(root->pRight, left, right) + sumRecur(root->pLeft, left, right);
+    }   
+}
+//HELPING FUCNTION
+bool find(T i) {
+    // TODO: return true if value i is in the tree; otherwise, return false.
+    return findRecur(this->root, i);
+}
+
+T sum(T l, T r) {
+    // TODO: return the sum of all element in the tree has value in range [l,r].
+    return sumRecur(this->root, l, r);
+}
+
+// STUDENT ANSWER END
+
+///////////////////////////////bai5
+T minRecur(Node* root){
+        if(root->pLeft == NULL) return root->value;
+        else{
+            return minRecur(root->pLeft);
+        }
+    }
+
+    T maxRecur(Node* root){
+        if(root->pRight == NULL) return root->value;
+        else{
+            return maxRecur(root->pRight);
+        }
+    }
+    //HELPING FUNCTIONS
+    T getMax(){
+        return maxRecur(this->root);
+    }
+
+    T getMin(){
+        return minRecur(this->root);
+    }

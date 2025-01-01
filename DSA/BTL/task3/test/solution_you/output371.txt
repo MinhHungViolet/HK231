@@ -1,0 +1,64 @@
+LIGHT 8 line 2
+LIGHT -5 line 4
+LIGHT 4 line 27
+kr-5
+fe--3
+sx-7
+sv--3
+zd--8
+oq--7
+LIGHT 2 line 34
+ub--7
+uq--6
+LIGHT 4 line 60
+zn-8
+az-2
+nd-6
+zu-1
+es--6
+bu--10
+qe-3
+ml-6
+up--8
+li-9
+cs--10
+LIGHT 7 line 79
+zg--9
+es--6
+zn-8
+az-2
+da-8
+bu--10
+fp-3
+nd-6
+up--8
+tx-5
+zu-1
+om--7
+be-3
+qe-3
+cs--10
+ml-6
+li-9
+bj--10
+rm-2
+LIGHT -3 line 101
+qi--8
+az-2
+da-8
+jw--7
+ev--10
+fp-3
+nd-6
+bv--6
+tx-5
+zu-1
+up--8
+om--7
+cs--10
+bj--10
+be-3
+kw-2
+rm-2
+zg--9
+zn-8

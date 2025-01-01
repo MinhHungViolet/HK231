@@ -1,0 +1,10 @@
+Bài 2:
+RegDst : 1 là sử dụng trường rd ở lệnh R làm thanh ghi đích, 0 là sử dụng trường rt lệnh I làm thanh ghi đích
+RegWrite : 1 là có ghi dữ liệu vào thanh ghi, 0 là ngược lại
+MemRead : 1 là có đọc dữ liệu trong data memory, 0 là ngược lại
+MemWrite : 1 là có ghi vào data memory, 0 là ngược lại
+MemtoReg : 1 là truyền dữ liệu đọc được từ data memory vào Write data, 0 là truyền kết quả từ
+ALU vào write data
+Branch : 1 là có thực hiện lệnh rẽ nhánh có điều kiện (cập nhật PC), 0 là ngược lại
+Jump : 1 là có thực hiện lệnh rẽ nhánh không điều kiện (cập nhật PC), 0 là ngược lại
+ALUSrc : tùy chọn input của ALU là gì, 1 thì toán hạng 2 là trường immediate của lênh I, 0 thì toán hạng 2 là nội dung thanh ghi 2 (Read Register 2).

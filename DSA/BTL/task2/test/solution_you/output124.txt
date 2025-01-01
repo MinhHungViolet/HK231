@@ -1,0 +1,9 @@
+LIGHT 7 line 7
+LIGHT 0 line 15
+vp-3
+LIGHT 7 line 17
+LIGHT -4 line 25
+pr-4
+LIGHT 9 line 36
+hb--3
+LIGHT -3 line 51

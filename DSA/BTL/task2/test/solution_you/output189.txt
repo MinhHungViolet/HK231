@@ -1,0 +1,8 @@
+LIGHT 7 line 20
+Cq-1
+bA-8
+hd--8
+LIGHT 1 line 24
+LIGHT 0 line 37
+LIGHT -9 line 46
+LIGHT 2 line 51

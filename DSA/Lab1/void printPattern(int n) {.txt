@@ -1,0 +1,15 @@
+void printPattern(int n) {
+    if (n <= 0) {
+        cout << n << " ";
+        return;
+    }
+    cout << n << " ";
+    printPattern(n - 5);
+    cout << n - 5 << " ";
+    if (n == 5) {
+        cout << n + 5 << " ";
+    }
+    if (n == 10) {
+        cout << n - 5 << " ";
+    }
+}

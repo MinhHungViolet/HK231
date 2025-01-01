@@ -1,0 +1,36 @@
+Bài 1:
+*Thanh ghi PC : dùng để lưu trữ địa chỉ của lệnh sẽ được thực thi tiếp theo 
+ngay sau lệnh đang xử lý, chỉ được cập nhật bởi phần cứng
+
+*Instruction memory : lưu trữ toàn bộ lệnh của chương trình đang thực thi dưới dạng ngôn ngữ máy, 
+Input là địa chỉ (32 bit) của Instruction trong Instruction memory, output là nội dụng của Instruction đó (32 bit)
+
+*Register : tập hợp 32 thanh ghi. Input bao gôm:
+- Register 1 : 5bit từ 25-21 của lệnh
+- Register 2 : 5bit từ 20-16 của lệnh
+- Write register : 5 bit 20-16 hoặc 15-11 của lệnh tùy vào lệnh
+- Write data : dữ liệu 32 bit cần ghi vào thanh ghi
+Output là nội dung 2 thanh ghi Register 1 và 2 (32bit)
+
+*ALU : 
+-Input : toán hạng 1 và toán hạng 2
+-Output : kết quả sau khi tính toán với các input trên và ngõ ra zero (sẽ bằng 1 nếu giá trị của 
+kết quả là 0, ngược lại thì zero = 0)
+Lưu ý : input và output đều là 32bit trừ output zero là 1 bit
+
+
+*Control : nhận input là trường opcode(6bit). Output là các tín hiệu dùng để điều khiển hoạt động của 
+các khối chức năng
+
+*Data memory : chứa dữ liệu của trường trình đang thực thi. Input là địa chỉ của ô nhớ trong data
+memory và(hoặc) dữ liệu vào(để ghi) (đều là 32bit), output là nội dung 32bit (các) ô 
+nhớ tương ứng (tùy vào muốn truy xuất một word, 2byte hay 1 byte của lệnh)
+
+*MUX : có chức năng điều hướng đường đi dữ liệu vào các khối chức năng phù hợp
+VD: đối với lệnh add thì bit từ 15-11 đóng vai trò là write register do đó MUX sẽ là 1 để 
+cho phép nhận trường rd trong lệnh R vào write register
+Đối với lệnh addi thì bit từ 20-16 đóng vai trò là write register do đó MUX sẽ là 0 để nhận
+trường rt trong lệnh I vào write register
+
+*Sign-extend : là bộ mở rộng dấu, VD với lệnh addi trường immediate 16 bit sẽ được mở rộng thành 32 bit
+để có thể tính toán trong bộ ALU (input ALU là 32bit)
